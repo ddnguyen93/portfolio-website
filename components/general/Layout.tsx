@@ -1,18 +1,19 @@
 import Head from 'next/head';
 import styles from '@/styles/Layout.module.css';
 import Header from '@/components/general/Header';
-import React, { JSXElementConstructor } from 'react';
+import Footer from '@/components/general/Footer';
+import React from 'react';
 
-type Props = {
+interface Props {
 	title: string;
 	keywords: string;
 	description: string;
 	children: React.ReactNode;
-};
+}
 
 const Layout = ({ title, keywords, description, children }: Props) => {
 	return (
-		<div>
+		<div className={styles.main}>
 			<Head>
 				<title>{title}</title>
 				<meta name="description" content={description} />
@@ -20,6 +21,7 @@ const Layout = ({ title, keywords, description, children }: Props) => {
 			</Head>
 			<Header />
 			<div className={styles.container}>{children}</div>
+			<Footer />
 		</div>
 	);
 };

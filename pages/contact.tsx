@@ -1,10 +1,10 @@
 import React from 'react';
 import Layout from '@/components/general/Layout';
 
-export default function ProjectsPage() {
+export default function ContactPage() {
 	return (
 		<Layout>
-			<div>Project Page</div>
+			<div>Contact Page</div>
 		</Layout>
 	);
 }

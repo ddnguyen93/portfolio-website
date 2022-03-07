@@ -1,115 +1,165 @@
-.container {
+.profileContainer {
+	display: flex;
+	justify-content: space-around;
+	margin: 20vh 0;
+	align-items: center;
+	width: 1100px;
 }
 
-.main {
-	min-height: 100vh;
-	padding: 4rem 0;
-	flex: 1;
+.profilePicture img {
+	border-radius: 40%;
+}
+
+.profilePicture {
+	width: 300px;
+	height: 300px;
+}
+
+.aboutContainer {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-
-.footer {
-	display: flex;
-	flex: 1;
-	padding: 2rem 0;
-	border-top: 1px solid #eaeaea;
-	justify-content: center;
-	align-items: center;
-}
-
-.footer a {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	padding: 25px;
 	flex-grow: 1;
 }
 
-.title a {
-	color: #0070f3;
-	text-decoration: none;
+.firstName {
+	color: rgb(45, 193, 238);
 }
 
-.title a:hover,
-.title a:focus,
-.title a:active {
-	text-decoration: underline;
+.nameContainer {
+	display: flex;
 }
 
-.title {
-	margin: 0;
-	line-height: 1.15;
-	font-size: 4rem;
+.aboutContainer h1 {
+	font-size: 60px;
+	margin: 5px;
 }
 
-.title,
-.description {
-	text-align: center;
+.aboutContainer h2 {
+	font-size: 25px;
+	margin: 5px;
 }
 
-.description {
-	margin: 4rem 0;
-	line-height: 1.5;
-	font-size: 1.5rem;
+.aboutContainer p {
+	font-size: 20px;
+	margin: 5px;
+	width: 500px;
 }
 
-.code {
-	background: #fafafa;
-	border-radius: 5px;
-	padding: 0.75rem;
-	font-size: 1.1rem;
-	font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-		Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-.grid {
+.aboutLinksContainer {
 	display: flex;
 	align-items: center;
-	justify-content: center;
-	flex-wrap: wrap;
-	max-width: 800px;
+	margin: 10px;
+	position: relative;
 }
 
-.card {
-	margin: 1rem;
-	padding: 1.5rem;
-	text-align: left;
-	color: inherit;
+.aboutLinksContainer a {
+	padding: 0.75rem 1.5rem;
+	background-color: rgb(45, 193, 238);
+	color: white;
+	border-radius: 4em;
+	font-size: 16px;
+	font-family: 'Jost', sans-serif;
+	user-select: none;
+	text-align: center;
 	text-decoration: none;
-	border: 1px solid #eaeaea;
-	border-radius: 10px;
-	transition: color 0.15s ease, border-color 0.15s ease;
-	max-width: 300px;
+	transition-duration: 0.4s;
+	-webkit-transition-duration: 0.4s;
 }
 
-.card:hover,
-.card:focus,
-.card:active {
-	color: #0070f3;
-	border-color: #0070f3;
+.aboutLinksContainer a:hover {
+	background-color: rgb(40, 166, 204);
 }
 
-.card h2 {
-	margin: 0 0 1rem 0;
-	font-size: 1.5rem;
+.aboutLinksContainer a:active {
+	position: relative;
+	top: 1.5px;
 }
 
-.card p {
-	margin: 0;
-	font-size: 1.25rem;
-	line-height: 1.5;
+.aboutLink {
+	margin: 0px 5px;
+	cursor: pointer;
 }
 
-.logo {
-	height: 1em;
-	margin-left: 0.5rem;
+.toolboxContainer {
+	color: white;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	font-size: 20px;
+	margin: 20vh 0;
 }
 
-@media (max-width: 600px) {
-	.grid {
-		width: 100%;
-		flex-direction: column;
+.toolboxContainer ul {
+	display: flex;
+	flex-direction: row;
+	width: 80vw;
+	max-width: 1000px;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 0px;
+	padding: 0;
+}
+
+.toolboxContainer li {
+	width: 150px;
+	list-style: none;
+	font-size: 25px;
+	margin: 5px;
+	display: flex;
+	justify-content: center;
+}
+
+@media screen and (max-width: 1300px) {
+	.profileContainer {
+		flex-direction: column-reverse;
+		margin: 20vh 5vw;
+		align-items: center;
+		width: 95vw;
+	}
+
+	.aboutLinksContainer {
+		justify-content: center;
+	}
+}
+
+@media screen and (max-width: 560px) {
+	.profileContainer {
+		flex-direction: column-reverse;
+		margin: 20vh 0;
+		align-items: center;
+	}
+
+	.aboutLinksContainer {
+		justify-content: center;
+	}
+
+	.aboutContainer {
+		padding: 25px 20px;
+	}
+
+	.aboutContainer h1 {
+		font-size: 35px;
+	}
+
+	.aboutContainer p {
+		font-size: 20px;
+		margin: 5px;
+		width: 90%;
+	}
+
+	.toolboxContainer {
+		margin: 20vh 0;
+	}
+}
+
+@media screen and (max-height: 1000px) and (max-width: 560px) {
+	.profileContainer {
+		margin: 10vh 0vw;
+		align-items: center;
+	}
+
+	.toolboxContainer {
+		margin: 10vh 0;
 	}
 }
