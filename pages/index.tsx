@@ -39,7 +39,14 @@ const Home: NextPage = () => {
 						new technologies and applying them to my projects.
 					</p>
 					<div className={styles.aboutLinksContainer}>
-						<a className={styles.aboutLink}>Resume</a>
+						<a
+							className={styles.aboutLink}
+							href="/David-Nguyen-Resume.pdf"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							Resume
+						</a>
 						<Link href="https://www.linkedin.com/in/david-duy-nguyen" passHref>
 							<AiOutlineLinkedin size={35} className={styles.aboutLink} />
 						</Link>

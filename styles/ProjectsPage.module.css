@@ -1,0 +1,13 @@
+.pageTitle {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 60px;
+	margin: 50px 0px 10px 0px;
+	color: rgb(177, 242, 253);
+}
+
+@media screen and (max-width: 500px) {
+	.pageTitle {
+		font-size: 50px;
+		margin: 35px 0px 0px 0px;
+	}
+}
