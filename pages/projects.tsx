@@ -26,17 +26,19 @@ export default function ProjectsPage() {
 			{projects.map((project) => {
 				const { id, title, description, tools, pictures, link, github } =
 					project;
-				return (
-					<ProjectComponent
-						key={id}
-						title={title}
-						description={description}
-						tools={tools}
-						pictures={pictures}
-						link={link}
-						github={github}
-					/>
-				);
+				if (pictures === 'stock-stalker' || pictures === 'odin-book') {
+					return (
+						<ProjectComponent
+							key={id}
+							title={title}
+							description={description}
+							tools={tools}
+							pictures={pictures}
+							link={link}
+							github={github}
+						/>
+					);
+				}
 			})}
 			<div className={styles.toolboxContainer}>
 				<h1 className={styles.pageTitle}>My Toolbox</h1>
