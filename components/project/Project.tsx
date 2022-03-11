@@ -11,7 +11,7 @@ interface Props {
 	title: string;
 	description: string;
 	tools: string;
-	pictures: string;
+	pictures: 'odin-book' | 'stock-stalker';
 	link: string;
 	github: string[];
 }

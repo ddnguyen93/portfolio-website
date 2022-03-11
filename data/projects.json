@@ -5,7 +5,7 @@
 			"title": "Stock Stalker",
 			"description": "Website that tracks the current and historical prices of stocks. Users who create an account can set up alert systems so when certain conditions are met, they will be notified via email.",
 			"tools": "React, Flask, MongoDB, AWS",
-			"pictures": "stockstalker",
+			"pictures": "stock-stalker",
 			"link": "https://www.stock-stalker.com/",
 			"github": [
 				"https://github.com/ddnguyen93/stock-stalker-frontend",
@@ -17,7 +17,7 @@
 			"title": "Odinbook",
 			"description": "Social media website that mimics Facebook. The features available to users includes creating, liking and commenting on posts, adding friends and uploading display pictures.",
 			"tools": "React, NodeJS, Express, MongoDB",
-			"pictures": "odinbook",
+			"pictures": "odin-book",
 			"link": "https://odinbookproj.herokuapp.com/",
 			"github": ["https://github.com/ddnguyen93/odinbook"]
 		}

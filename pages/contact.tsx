@@ -15,7 +15,7 @@ export default function ContactPage() {
 		event.preventDefault();
 
 		try {
-			const response = await fetch('http://localhost:3000/api/email', {
+			const response = await fetch('david-nguyen.dev/api/email', {
 				method: 'POST',
 				headers: {
 					'Content-Type': 'application/json',

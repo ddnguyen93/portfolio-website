@@ -7,8 +7,8 @@ import odinbookpic2 from './images/projects/odinbook/odinbook-userslist.png';
 import odinbookpic3 from './images/projects/odinbook/odinbook-profile.png';
 
 const imageData = {
-	stockstalker: [stockpic1, stockpic2, stockpic3],
-	odinbook: [odinbookpic1, odinbookpic2, odinbookpic3],
+	'stock-stalker': [stockpic1, stockpic2, stockpic3],
+	'odin-book': [odinbookpic1, odinbookpic2, odinbookpic3],
 };
 
 export default imageData;
