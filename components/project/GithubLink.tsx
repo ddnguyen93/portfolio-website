@@ -29,7 +29,9 @@ export default function GithubLink({ github }: Props) {
 					/>
 					{dropMenu && (
 						<div className={styles.dropMenu}>
-							<a href={github[0]}>Frontend Code</a>
+							<a href={github[0]} id={styles.linkTab}>
+								Frontend Code
+							</a>
 							<a href={github[1]}>Backend Code</a>
 						</div>
 					)}

@@ -1,9 +1,10 @@
 .profileContainer {
 	display: flex;
 	justify-content: space-around;
-	margin: 20vh 0;
+	margin: auto;
 	align-items: center;
 	width: 1100px;
+	user-select: none;
 }
 
 .profilePicture img {

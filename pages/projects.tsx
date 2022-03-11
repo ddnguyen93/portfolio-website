@@ -6,10 +6,23 @@ import ProjectComponent from '@/components/project/Project';
 
 export default function ProjectsPage() {
 	const { projects } = data;
-	console.log(projects);
+	const tools = [
+		'Javascript',
+		'HTML',
+		'CSS',
+		'Python',
+		'React',
+		'NodeJS',
+		'Express',
+		'Flask',
+		'MongoDB',
+		'AWS',
+		'Typescript',
+		'NextJS',
+	];
 	return (
 		<Layout title="David Nguyen | Projects">
-			<h1 className={styles.pageTitle}>My Projects</h1>
+			<h1 className={styles.pageTitle}>MY PROJECTS</h1>
 			{projects.map((project) => {
 				const { id, title, description, tools, pictures, link, github } =
 					project;
@@ -25,6 +38,14 @@ export default function ProjectsPage() {
 					/>
 				);
 			})}
+			<div className={styles.toolboxContainer}>
+				<h1 className={styles.pageTitle}>My Toolbox</h1>
+				<ul>
+					{tools.map((tool) => {
+						return <li key={tool}>{tool}</li>;
+					})}
+				</ul>
+			</div>
 		</Layout>
 	);
 }

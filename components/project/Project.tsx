@@ -5,7 +5,6 @@ import Image from 'next/image';
 import imageData from '../../public/index';
 import { MdArrowBackIos, MdArrowForwardIos } from 'react-icons/md';
 import { HiOutlineExternalLink } from 'react-icons/hi';
-import { AiOutlineGithub } from 'react-icons/ai';
 import GithubLink from './GithubLink';
 
 interface Props {
@@ -49,7 +48,9 @@ const ProjectComponent = ({
 					<GithubLink github={github} />
 				</div>
 				<p>{description}</p>
-				<p>Tools Used: {tools}</p>
+				<p>
+					<b>Tools Used:</b> {tools}
+				</p>
 			</div>
 			<div className={styles.imageContainer}>
 				<Image

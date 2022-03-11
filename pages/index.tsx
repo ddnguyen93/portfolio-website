@@ -4,27 +4,9 @@ import profilePic from 'public/profile_pic.jpg';
 import Layout from '@/components/general/Layout';
 import styles from '@/styles/Home.module.css';
 import Link from 'next/link';
-import {
-	AiOutlineCopyright,
-	AiOutlineLinkedin,
-	AiOutlineGithub,
-} from 'react-icons/ai';
+import { AiOutlineLinkedin, AiOutlineGithub } from 'react-icons/ai';
 
 const Home: NextPage = () => {
-	const tools = [
-		'Javascript',
-		'HTML',
-		'CSS',
-		'Python',
-		'React',
-		'NodeJS',
-		'Express',
-		'Flask',
-		'MongoDB',
-		'AWS',
-		'Typescript',
-	];
-
 	return (
 		<Layout>
 			<div className={styles.profileContainer}>
@@ -35,8 +17,9 @@ const Home: NextPage = () => {
 						<h1>NGUYEN</h1>
 					</div>
 					<p>
-						I&apos;m a Full Stack Software Developer passionate about learning
-						new technologies and applying them to my projects.
+						I&apos;m a Full Stack Software Developer based in Toronto who is
+						passionate about learning new technologies and applying them to my
+						projects.
 					</p>
 					<div className={styles.aboutLinksContainer}>
 						<a
@@ -63,14 +46,6 @@ const Home: NextPage = () => {
 						width={300}
 					/>
 				</div>
-			</div>
-			<div className={styles.toolboxContainer}>
-				<h1>My Toolbox</h1>
-				<ul>
-					{tools.map((tool) => {
-						return <li key={tool}>{tool}</li>;
-					})}
-				</ul>
 			</div>
 		</Layout>
 	);
