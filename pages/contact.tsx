@@ -15,7 +15,7 @@ export default function ContactPage() {
 		event.preventDefault();
 
 		try {
-			const response = await fetch('david-nguyen.dev/api/email', {
+			const response = await fetch('http://david-nguyen.dev/api/email', {
 				method: 'POST',
 				headers: {
 					'Content-Type': 'application/json',
@@ -30,10 +30,6 @@ export default function ContactPage() {
 			const responseData = await response.json();
 			console.log(responseData);
 			if (responseData.message === 'successful') {
-				setFirstName('');
-				setLastName('');
-				setEmail('');
-				setMessage('');
 				setAlert('Message Sent.');
 			} else {
 				setAlert(

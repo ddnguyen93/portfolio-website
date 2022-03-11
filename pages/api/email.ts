@@ -1,6 +1,14 @@
 import { NextApiRequest, NextApiResponse } from 'next';
 const nodemailer = require('nodemailer');
 
+// export const config = {
+// 	api: {
+// 		bodyParser: {
+// 			sizeLimit: '1mb',
+// 		},
+// 	},
+// };
+
 export default async function emailHandler(
 	req: NextApiRequest,
 	res: NextApiResponse
